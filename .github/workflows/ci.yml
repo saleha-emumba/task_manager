@@ -30,7 +30,4 @@ jobs:
       - name: Check import order with isort
         run: isort --check-only .
       - name: Run tests
-        run: |
-          if [ -d tests ]; then
-            python -m unittest discover tests
-          fi
+        run: pytest -q

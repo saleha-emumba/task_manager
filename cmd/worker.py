@@ -2,7 +2,7 @@ import argparse
 from typing import Optional
 from storage.json_storage import JSONStorage
 from models.task import Task, TaskCollection
-from utils.decorators import timeit, validate_not_empty
+from utils.decorators import timeit
 
 
 STORAGE_FILE = "storage/storage_file/tasks.json"
